@@ -1,0 +1,51 @@
+
+challenge: aido1_log_processing-v3
+title: >
+    A dummy challenge to test log processing.
+
+description: |
+
+
+protocol: p1
+
+date-open: 2018-09-01t21:59:43.10-05:00
+date-close: 2019-01-01t21:59:43.10-05:00
+
+roles:
+  user:AndreaCensi:
+    grant: true
+    moderate: true
+    snoop: true
+
+steps:
+  logstep1:
+    title: First step
+    description: ""
+    evaluation_parameters:
+      container: "duckietown/aido1_log_processing-v3b-evaluator:latest"
+      environment:
+        STEP: step1
+    features_required:
+      ram_available_mb: 80
+      disk_available_mb: 100
+#
+#  step2:
+#    title: Second step
+#    description: ""
+#    evaluation_parameters:
+#      container: "duckietown/aido1_log_processing-v3-evaluator:latest"
+#      environment:
+#        STEP: step2
+#    features_required:
+#      ram_available_mb: 80
+#      disk_available_mb: 100
+
+transitions:
+  - [START, success, logstep1]
+  - [logstep1, success, SUCCESS]
+  - [logstep1, failed, FAILED]
+  - [logstep1, error, ERROR]
+#  - [step2, success, SUCCESS]
+#  - [step2, failed, FAILED]
+#  - [step2, error, ERROR]
+
