@@ -11,3 +11,7 @@ build:
 
 build-no-cache:
 	docker build -t $(img) . --no-cache
+
+
+define-challenge:
+	dts challenges define --config ../challenge.yaml
