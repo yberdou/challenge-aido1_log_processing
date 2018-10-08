@@ -14,4 +14,4 @@ build-no-cache:
 
 
 define-challenge:
-	dts challenges define --config ../challenge.yaml
+	dts challenges define --config ../challenge.yaml --build evaluator:.

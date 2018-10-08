@@ -26,7 +26,7 @@ steps:
     evaluation_parameters:
       services:
         evaluator:
-          image: "duckietown/aido1_log_processing-v3b-evaluator:latest"
+          image: EVALUATION_CONTAINER
         solution:
           image: SUBMISSION_CONTAINER
 
