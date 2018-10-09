@@ -1,9 +1,9 @@
 
 challenge: aido1_log_processing-v3
-title: >
-    A dummy challenge to test log processing.
+title: "[Test] Log processing"
 
-description: |
+description: null # load from challenge.description.md
+
 
 
 protocol: p1
