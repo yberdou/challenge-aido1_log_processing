@@ -26,7 +26,10 @@ steps:
     evaluation_parameters:
       services:
         evaluator:
-          image: EVALUATION_CONTAINER
+          image: _
+          build:
+            context: evaluation
+
         solution:
           image: SUBMISSION_CONTAINER
 
