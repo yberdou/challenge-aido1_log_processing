@@ -1,8 +1,5 @@
 This is a test challenge for log processing.
-
-### Scoring
-
-No scored computed.
+ 
 
 
 ### Artefacts
